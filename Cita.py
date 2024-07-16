@@ -10,7 +10,7 @@ driver.get('https://icp.administracionelectronica.gob.es/icpplus/index.html')
 
 
 datos = [{"passaporte": "TuPasaporte", "nombre": "TuNombre",
-          "nacimiento": 1111, "Pais": "Cuba"}]
+          "nacimiento": 1111, "Pais": "TuPais"}]
 
 
 try:
