@@ -16,9 +16,6 @@
       if vpn % 10 == 0:
             try:
                 subprocess.run(['nordvpn', '-c'], check=True)
-                print("Conectado a NordVPN exitosamente.")
-            except subprocess.CalledProcessError as e:
-                print(f"Error al conectar a NordVPN: {e}")
             time.sleep(8)
 ```
   
