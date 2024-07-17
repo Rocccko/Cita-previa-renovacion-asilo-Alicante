@@ -5,3 +5,19 @@
   escribir los valores entre comillas menos la fecha de nacimiento.
 
   Para ejecutar, abres la terminal, vas a la dirección donde lo tengas descargado y lo ejecutas con: python Cita.py
+
+  **NUEVO**
+  Para evitar el bloqueo temporal al realizar muchas peticiones a la web de extranjería puedes añadir el siguiente fragmento de codigo al programa para que cada x 
+  iteraciones vayas cambiando de IP. Para ello uso NordVPN (de pago).
+
+  Añadir un contador en el codigo que se llame vpn y que vaya aumentando por cada iteración, en este caso la ip cambiará cada 10 iteraciones.
+  ```
+      if vpn % 10 == 0:
+            try:
+                subprocess.run(['nordvpn', '-c'], check=True)
+                print("Conectado a NordVPN exitosamente.")
+            except subprocess.CalledProcessError as e:
+                print(f"Error al conectar a NordVPN: {e}")
+            time.sleep(8)
+```
+  
