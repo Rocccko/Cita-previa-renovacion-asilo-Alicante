@@ -13,9 +13,11 @@
 
   Añadir un contador en el codigo que se llame vpn y que vaya aumentando por cada iteración, en este caso la ip cambiará cada 10 iteraciones.
   ```
-      if vpn % 10 == 0:
+        if vpn % 10 == 0:
             try:
                 subprocess.run(['nordvpn', '-c'], check=True)
+            except:
+                pass
             time.sleep(8)
 ```
   
