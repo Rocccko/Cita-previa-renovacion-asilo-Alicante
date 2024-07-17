@@ -6,7 +6,8 @@
 
   Para ejecutar, abres la terminal, vas a la dirección donde lo tengas descargado y lo ejecutas con: python Cita.py
 
-  **NUEVO**
+                                                                  **NUEVO**
+  
   Para evitar el bloqueo temporal al realizar muchas peticiones a la web de extranjería puedes añadir el siguiente fragmento de codigo al programa para que cada x 
   iteraciones vayas cambiando de IP. Para ello uso NordVPN (de pago).
 
